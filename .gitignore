@@ -1,0 +1,32 @@
+# Build output
+out/
+bin/
+target/
+
+# IDE files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+
+# Logs
+*.log
+
+
+out/ 
+data/ 
+screenshots/ 
+*.class 
+*.log 
+.DS_Store 
+Thumbs.db 
