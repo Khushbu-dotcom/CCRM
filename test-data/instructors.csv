@@ -1,0 +1,5 @@
+id,fullName,email,department,title,status,assignedCourses
+INST001,Dr. Sarah Johnson,sarah.johnson@university.edu,Computer Science,Professor,ACTIVE,CSE101;CSE102
+INST002,Dr. Michael Chen,michael.chen@university.edu,Mathematics,Associate Professor,ACTIVE,MAT101
+INST003,Dr. Emily Davis,emily.davis@university.edu,Physics,Professor,ACTIVE,PHY101
+INST004,Dr. Robert Wilson,robert.wilson@university.edu,English,Assistant Professor,ACTIVE,ENG101

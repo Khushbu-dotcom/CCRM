@@ -1,0 +1,6 @@
+id,courseCode,title,description,credits,department,instructorId,semester,status
+CRS0001,CSE101,Introduction to Computer Science,Basic programming concepts and problem solving,3,Computer Science,,FALL_2025,ACTIVE
+CRS0002,MAT101,Calculus I,Introduction to differential calculus,4,Mathematics,,FALL_2025,ACTIVE
+CRS0003,PHY101,Physics I,Mechanics and thermodynamics,4,Physics,,FALL_2025,ACTIVE
+CRS0004,CSE102,Data Structures,Arrays, linked lists, trees, and graphs,3,Computer Science,,SPRING_2025,ACTIVE
+CRS0005,ENG101,English Composition,Writing and communication skills,3,English,,FALL_2025,ACTIVE
