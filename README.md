@@ -1,4 +1,4 @@
-# 🎓 Campus Course & Records Manager (CCRM)
+# Campus Course & Records Manager (CCRM)
 
 <div align="center">
 
@@ -15,20 +15,20 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 **CCRM** is a sophisticated console-based academic management system designed for educational institutions. Built entirely in Java SE, it provides a complete solution for managing student records, course catalogs, enrollment processes, and academic reporting.
 
-### 🎯 What Makes CCRM Special?
+### What Makes CCRM Special?
 
-- **🏛️ Real-world Application**: Designed for actual academic institutions
-- **⚡ Modern Java**: Leverages Java 17+ features and best practices
-- **🔧 Production Ready**: Comprehensive error handling and data validation
-- **📊 Rich Reporting**: Advanced analytics and transcript generation
-- **💾 Data Persistence**: CSV import/export with automated backup systems
-- **🎨 Clean Architecture**: Well-structured, maintainable codebase
+- **Real-world Application**: Designed for actual academic institutions
+- **Modern Java**: Leverages Java 17+ features and best practices
+- **Production Ready**: Comprehensive error handling and data validation
+- **Rich Reporting**: Advanced analytics and transcript generation
+- **Data Persistence**: CSV import/export with automated backup systems
+- **Clean Architecture**: Well-structured, maintainable codebase
 
-### 🛠️ Technology Stack
+### Technology Stack
 
 | Component | Technology | Version |
 |-----------|------------|---------|
@@ -38,9 +38,9 @@
 | **Data Format** | CSV | Standard |
 | **Architecture** | Layered | Service-Oriented |
 
-## ☕ Java Platform Deep Dive
+## Java Platform Deep Dive
 
-### 📈 Java Evolution Timeline
+### Java Evolution Timeline
 
 <details>
 <summary><b>Click to expand the complete Java evolution timeline</b></summary>
@@ -63,7 +63,7 @@
 
 </details>
 
-### 🏗️ Java Platform Architecture
+### Java Platform Architecture
 
 <div align="center">
 
@@ -93,16 +93,16 @@ graph TB
 
 | Edition | Target | Memory | Use Cases | CCRM Usage |
 |---------|--------|--------|-----------|------------|
-| **Java ME** | Embedded/Mobile | < 64MB | IoT, Feature phones | ❌ Not used |
-| **Java SE** | Desktop/Server | 64MB+ | Desktop apps, CLI tools | ✅ **Primary** |
-| **Java EE** | Enterprise | 256MB+ | Web apps, Microservices | ❌ Not used |
+| **Java ME** | Embedded/Mobile | < 64MB | IoT, Feature phones |  Not used |
+| **Java SE** | Desktop/Server | 64MB+ | Desktop apps, CLI tools |  **Primary** |
+| **Java EE** | Enterprise | 256MB+ | Web apps, Microservices |  Not used |
 
 #### 🔧 JDK vs JRE vs JVM Explained
 
 <details>
 <summary><b>Understanding the Java ecosystem components</b></summary>
 
-**🎯 JVM (Java Virtual Machine)**
+** JVM (Java Virtual Machine)**
 - **Role**: The execution engine that runs Java bytecode
 - **Responsibilities**: 
   - Memory management and garbage collection
@@ -110,12 +110,12 @@ graph TB
   - Platform-specific optimizations
 - **Platform**: Windows, Linux, macOS (different JVM for each)
 
-**📦 JRE (Java Runtime Environment)**
+** JRE (Java Runtime Environment)**
 - **Components**: JVM + Java Class Libraries + Supporting files
 - **Purpose**: Execute Java applications (not develop them)
 - **Contains**: Everything needed to run Java programs
 
-**🛠️ JDK (Java Development Kit)**
+** JDK (Java Development Kit)**
 - **Components**: JRE + Development tools
 - **Tools Included**:
   - `javac` - Java compiler
@@ -127,19 +127,18 @@ graph TB
 
 </details>
 
-## 🚀 Quick Start
+##  Quick Start
 
-### 📋 Prerequisites
-
+### Prerequisites
 Before you begin, ensure you have the following installed:
 
-- **☕ Java Development Kit (JDK) 17 or higher**
+- **Java Development Kit (JDK) 17 or higher**
   - Download from [Oracle](https://www.oracle.com/java/technologies/downloads/) or [OpenJDK](https://openjdk.org/)
   - Verify installation: `java -version`
-- **💻 Operating System**: Windows 10+, macOS 10.14+, or Linux (Ubuntu 18.04+)
-- **📁 Terminal/Command Prompt**: For running commands
+- **Operating System**: Windows 10+, macOS 10.14+, or Linux (Ubuntu 18.04+)
+- **Terminal/Command Prompt**: For running commands
 
-### ⚡ Getting Started in 3 Steps
+### Getting Started in 3 Steps
 
 #### Step 1: Clone and Navigate
 ```bash
@@ -181,16 +180,16 @@ java -ea -cp out edu.ccrm.cli.CCRM
 
 </details>
 
-#### Step 3: Start Managing! 🎉
+#### Step 3: Start Managing!
 
 Once the application starts, you'll see the main menu. Try these first steps:
 
-1. **📊 Import Sample Data**: Go to "Import/Export Data" → Import students/courses
-2. **👥 Add a Student**: Go to "Manage Students" → Add Student
-3. **📚 Create a Course**: Go to "Manage Courses" → Add Course
-4. **🎓 Enroll Students**: Go to "Enrollment" → Enroll Student
+1. **Import Sample Data**: Go to "Import/Export Data" → Import students/courses
+2. **Add a Student**: Go to "Manage Students" → Add Student
+3. **Create a Course**: Go to "Manage Courses" → Add Course
+4. **Enroll Students**: Go to "Enrollment" → Enroll Student
 
-### 🔧 Configuration Options
+### Configuration Options
 
 #### Enabling Assertions
 Assertions help catch bugs during development but are disabled by default for performance:
@@ -214,7 +213,7 @@ For large datasets, you might need to increase heap size:
 java -Xmx2g -ea -cp out edu.ccrm.cli.CCRM
 ```
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ### 📁 Directory Structure
 
@@ -261,7 +260,7 @@ CCRM/
 └── 📄 USAGE.md                          # Detailed usage guide
 ```
 
-### 🎯 Design Patterns Used
+### Design Patterns Used
 
 | Pattern | Location | Purpose | Benefits |
 |---------|----------|---------|----------|
@@ -271,7 +270,7 @@ CCRM/
 | **Value Object** | `CourseCode` | Immutable data | Thread safety, consistency |
 | **Strategy** | `Searchable<T>` | Flexible search algorithms | Extensibility, polymorphism |
 
-### 🔄 Data Flow Architecture
+### Data Flow Architecture
 
 <div align="center">
 
@@ -296,93 +295,93 @@ graph TD
 
 </div>
 
-## ✨ Features & Capabilities
+## Features & Capabilities
 
-### 🏛️ Domain Models & Object-Oriented Design
+### Domain Models & Object-Oriented Design
 
 Our domain model is built on solid OOP principles, making the codebase maintainable and extensible:
 
-- **🎭 Abstract Base Class**: `Person` serves as the foundation for all human entities
-- **👥 Concrete Entities**: `Student`, `Instructor`, `Course`, `Enrollment`, `Transcript`
-- **📊 Rich Enumerations**: `Semester` and `Grade` with business logic and grade point calculations
-- **🔒 Immutable Value Objects**: `CourseCode` ensures data integrity and thread safety
-- **🔌 Flexible Interfaces**: `Persistable` and `Searchable<T>` for cross-cutting concerns
-- **🏗️ Nested Classes**: `Student.Statistics` (static) and `Transcript.TranscriptEntry` (inner)
-- **🎯 OOP Pillars**: Complete demonstration of inheritance, encapsulation, abstraction, and polymorphism
+- **Abstract Base Class**: `Person` serves as the foundation for all human entities
+- **Concrete Entities**: `Student`, `Instructor`, `Course`, `Enrollment`, `Transcript`
+- **Rich Enumerations**: `Semester` and `Grade` with business logic and grade point calculations
+- **Immutable Value Objects**: `CourseCode` ensures data integrity and thread safety
+- **Flexible Interfaces**: `Persistable` and `Searchable<T>` for cross-cutting concerns
+- **Nested Classes**: `Student.Statistics` (static) and `Transcript.TranscriptEntry` (inner)
+- **OOP Pillars**: Complete demonstration of inheritance, encapsulation, abstraction, and polymorphism
 
 ### 👨‍🎓 Student Management System
 
 A comprehensive student lifecycle management system:
 
-- **➕ Student Registration**: Add new students with validation
-- **📋 Student Directory**: List, search, and filter students by multiple criteria
-- **✏️ Profile Management**: Update student information and academic records
-- **📊 Academic Profiles**: View detailed student profiles with enrollment history
-- **📅 Modern Date Handling**: Uses Java 8+ Date/Time API for timestamps
-- **🔍 Advanced Search**: Find students by name, email, registration number, or course enrollment
+- **Student Registration**: Add new students with validation
+- **Student Directory**: List, search, and filter students by multiple criteria
+- **Profile Management**: Update student information and academic records
+- **Academic Profiles**: View detailed student profiles with enrollment history
+- **Modern Date Handling**: Uses Java 8+ Date/Time API for timestamps
+- **Advanced Search**: Find students by name, email, registration number, or course enrollment
 
-### 📚 Course Catalog Management
+### Course Catalog Management
 
 Powerful course management with modern Java features:
 
-- **🏗️ Builder Pattern**: Fluent API for creating complex course objects
-- **👨‍🏫 Instructor Assignment**: Assign and manage course instructors
-- **🔍 Stream-Powered Search**: Filter courses by instructor, department, semester using Java Streams
-- **📊 Sorting & Organization**: Sort courses by code, title, or credits using Arrays utilities
-- **📝 Course Lifecycle**: Create, update, activate, and deactivate courses
-- **🏷️ Department Organization**: Organize courses by academic departments
+- **Builder Pattern**: Fluent API for creating complex course objects
+- **Instructor Assignment**: Assign and manage course instructors
+- **Stream-Powered Search**: Filter courses by instructor, department, semester using Java Streams
+- **Sorting & Organization**: Sort courses by code, title, or credits using Arrays utilities
+- **Course Lifecycle**: Create, update, activate, and deactivate courses
+- **Department Organization**: Organize courses by academic departments
 
-### 🎓 Enrollment & Academic Records
+### Enrollment & Academic Records
 
 Sophisticated enrollment system with business rule enforcement:
 
-- **📝 Smart Enrollment**: Enroll students with automatic credit limit validation (18 credits max)
-- **🎯 Business Rules**: Prevents duplicate enrollments and credit overload
-- **📊 Grade Management**: Record grades by percentage or letter grade
-- **🧮 GPA Calculation**: Automatic GPA computation with weighted averages
-- **📜 Transcript Generation**: Beautiful transcript formatting with polymorphism
-- **⚠️ Custom Exceptions**: `DuplicateEnrollmentException` and `MaxCreditLimitExceededException`
+- **Smart Enrollment**: Enroll students with automatic credit limit validation (18 credits max)
+- **Business Rules**: Prevents duplicate enrollments and credit overload
+- **Grade Management**: Record grades by percentage or letter grade
+- **GPA Calculation**: Automatic GPA computation with weighted averages
+- **Transcript Generation**: Beautiful transcript formatting with polymorphism
+- **Custom Exceptions**: `DuplicateEnrollmentException` and `MaxCreditLimitExceededException`
 
-### 💾 Data Persistence & Backup
+### Data Persistence & Backup
 
 Enterprise-grade data management:
 
-- **📥 CSV Import/Export**: Seamless data exchange with external systems
-- **🔄 Automated Backups**: Timestamped backup creation using NIO.2
-- **📊 Recursive Utilities**: Calculate backup directory sizes recursively
-- **🛡️ Data Validation**: Comprehensive input validation and error handling
-- **📁 File Management**: Modern file operations using Java NIO.2
+- **CSV Import/Export**: Seamless data exchange with external systems
+- **Automated Backups**: Timestamped backup creation using NIO.2
+- **Recursive Utilities**: Calculate backup directory sizes recursively
+- **Data Validation**: Comprehensive input validation and error handling
+- **File Management**: Modern file operations using Java NIO.2
 
-### 🎮 Command Line Interface
+### Command Line Interface
 
 Intuitive and feature-rich console interface:
 
-- **🔄 All Loop Constructs**: Demonstrates while, do-while, for, enhanced-for loops
-- **🎯 Control Flow**: Break, continue, and labeled jumps for complex navigation
-- **⚡ Decision Making**: Comprehensive if/else and switch statement usage
-- **🛡️ Error Handling**: Robust exception handling throughout the application
-- **📱 User Experience**: Clear menus and helpful error messages
+- **All Loop Constructs**: Demonstrates while, do-while, for, enhanced-for loops
+- **Control Flow**: Break, continue, and labeled jumps for complex navigation
+- **Decision Making**: Comprehensive if/else and switch statement usage
+- **Error Handling**: Robust exception handling throughout the application
+- **User Experience**: Clear menus and helpful error messages
 
-### 🚀 Advanced Java Features
+### Advanced Java Features
 
 Cutting-edge Java programming techniques:
 
-- **🌊 Stream API**: Functional programming for data processing and reporting
-- **🔧 Lambda Expressions**: Concise code for comparators and predicates
-- **🎭 Anonymous Classes**: Custom implementations for sorting and callbacks
-- **🔄 Type Casting**: Upcast/downcast with instanceof checks
-- **✅ Assertions**: Invariant checking for debugging and validation
-- **📊 Functional Interfaces**: Predicate, Comparator, and custom functional interfaces
+- **Stream API**: Functional programming for data processing and reporting
+- **Lambda Expressions**: Concise code for comparators and predicates
+- **Anonymous Classes**: Custom implementations for sorting and callbacks
+- **Type Casting**: Upcast/downcast with instanceof checks
+- **Assertions**: Invariant checking for debugging and validation
+- **Functional Interfaces**: Predicate, Comparator, and custom functional interfaces
 
-### ⚠️ Exception Handling & Validation
+### Exception Handling & Validation
 
 Production-ready error management:
 
-- **🎯 Custom Exceptions**: Domain-specific exception classes
-- **🔄 Multi-catch**: Handle multiple exception types efficiently
-- **🛡️ Try-with-resources**: Automatic resource management
-- **📤 Exception Propagation**: Proper exception handling hierarchy
-- **✅ Input Validation**: Comprehensive data validation at all levels
+- **Custom Exceptions**: Domain-specific exception classes
+- **Multi-catch**: Handle multiple exception types efficiently
+- **Try-with-resources**: Automatic resource management
+- **Exception Propagation**: Proper exception handling hierarchy
+- **Input Validation**: Comprehensive data validation at all levels
 
 ## Syllabus Topic Mapping
 
